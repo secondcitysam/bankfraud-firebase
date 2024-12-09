@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_color"
+    tools:context=".Fragments.SearchTransaction">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:hint="Search By Transaction ID"
+                android:background="@drawable/edittext_bg"
+                android:inputType="textWebPassword"
+                android:id="@+id/sid"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="@font/baloo"
+                >
+
+            </EditText>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+               android:layout_marginTop="3dp"
+                android:backgroundTint="@color/bgmain"
+                app:tint="@color/black"
+                android:src="@drawable/search_20px"
+                android:id="@+id/imgbtn"
+                >
+
+            </ImageButton>
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/edittext_bg"
+            android:maxLines="10"
+            android:id="@+id/rid"
+            android:fontFamily="@font/baloo"
+            >
+
+        </TextView>
+       </LinearLayout>
+</FrameLayout>
